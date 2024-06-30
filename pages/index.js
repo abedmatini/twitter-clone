@@ -1,10 +1,11 @@
 import Tweet from "@/Tweet";
 import path from "path";
 import fs from "fs";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Home( {tweets} ){
   return (
-    <div className="{styles.container}">
+    <div className="">
       <h1>Hello, world!</h1>
       {tweets.map(tweet => <Tweet Key = {tweet.id} text={tweet.text} author={tweet.author} data={tweet.date} />)}
     </div>
